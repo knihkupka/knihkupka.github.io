@@ -1,9 +1,7 @@
 main:
-  - title: "Posts"
-    url: /posts/
-  - title: "Categories"
-    url: /categories/
-  - title: "Tags"
-    url: /tags/
-  - title: "About"
+  - title: "Novinky"
+    url: /novinky/
+  - title: "O nás"
     url: /about/
+  - title: "Kontakty"
+    url: /kontakty/
