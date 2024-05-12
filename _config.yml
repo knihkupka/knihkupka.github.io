@@ -93,7 +93,7 @@ defaults:
   # _posts
   - scope:
       path: ""
-      type: pages
+      type: posts
     values:
       layout: splash
       # author_profile: true
