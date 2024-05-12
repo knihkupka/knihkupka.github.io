@@ -25,6 +25,8 @@ minimal_mistakes_skin: default
 search: true
 
 # Build settings
+plugins:
+  - jekyll-include-cache  
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
 # Outputting
