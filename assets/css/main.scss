@@ -1,0 +1,39 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+search: false
+---
+
+@charset "utf-8";
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
+
+@font-face {
+    font-family: 'Literata-SemiBold';
+    src: url('../fonts/Literata-SemiBold.woff2') format('woff2'),
+         url('../fonts/Literata-SemiBold.woff') format('woff'),
+         url('../fonts/Literata-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-display: swap;
+    font-style: normal;
+  }
+
+@font-face {
+font-family: 'Literata-Bold';
+src: url('../fonts/Literata-Bold.woff2') format('woff2'),
+        url('../fonts/Literata-Bold.woff') format('woff'),
+        url('../fonts/Literata-Bold.ttf') format('truetype');
+font-weight: 700;
+font-display: swap;
+font-style: normal;
+}
+
+.site-title {
+    font-family: 'Literata-Bold', serif;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: center;
+    align-self: center;
+    font-weight: bold;
+}

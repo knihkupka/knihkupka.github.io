@@ -1,5 +1,59 @@
 # User interface text and labels
 
+
+# Czech
+# -----------------
+cs: &DEFAULT_CS
+  skip_links                 : "Přeskočit odkazy"
+  skip_primary_nav           : "Přeskočit na hlavní navigaci"
+  skip_content               : "Přeskočit na obsah"
+  skip_footer                : "Přeskočit na konec"
+  page                       : "Stránka"
+  pagination_previous        : "Předchozí"
+  pagination_next            : "Další"
+  breadcrumb_home_label      : "Domů"
+  breadcrumb_separator       : "/"
+  menu_label                 : "Přepnout menu"
+  search_label               : "Přepnout vyhledávání"
+  toc_label                  : "Na této stránce"
+  ext_link_label             : "Přímý odkaz"
+  less_than                  : "méně než"
+  minute_read                : "minut čtení"
+  share_on_label             : "Sdílet na"
+  meta_label                 :
+  tags_label                 : "Štítky:"
+  categories_label           : "Kategorie:"
+  date_label                 : "Aktualizováno:"
+  comments_label             : "Zanechat komentář"
+  comments_title             : "Komentáře"
+  more_label                 : "Dozvědět se více"
+  related_label              : "Mohlo by se vám také líbit"
+  follow_label               : "Sledovat:"
+  feed_label                 : "Feed"
+  powered_by                 : "Používá"
+  website_label              : "Webová stránka"
+  email_label                : "Email"
+  recent_posts               : "Nedávné příspěvky"
+  undefined_wpm              : "Nedefinovaný parametr words_per_minute v _config.yml"
+  comment_form_info          : "Vaše e-mailová adresa nebude zveřejněna. Povinné položky jsou označeny"
+  comment_form_comment_label : "Komentář"
+  comment_form_md_info       : "Podporován je Markdown."
+  comment_form_name_label    : "Jméno"
+  comment_form_email_label   : "E-mailová adresa"
+  comment_form_website_label : "Webová stránka (volitelné)"
+  comment_btn_submit         : "Odeslat komentář"
+  comment_btn_submitted      : "Odesláno"
+  comment_success_msg        : "Děkujeme za váš komentář! Zobrazí se na webu, jakmile bude schválen."
+  comment_error_msg          : "Omlouváme se, došlo k chybě při odesílání. Ujistěte se, že jste vyplnili všechna povinná pole a zkuste to znovu."
+  loading_label              : "Načítání..."
+  search_label_text          : "Zadejte hledaný výraz..."
+  search_placeholder_text    : "Zadejte hledaný výraz..."
+  search_algolia_no_results  : "Žádné výsledky"
+  results_found              : "Nalezeno výsledků"
+  back_to_top                : "Zpět nahoru"
+cs-CZ:
+  <<: *DEFAULT_CS
+
 # English (default)
 # -----------------
 en: &DEFAULT_EN
