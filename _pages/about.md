@@ -1,8 +1,29 @@
 ---
 permalink: /about/
-title: "About"
+title: "O nás"
+gallery:
+  - url: /assets/images/bookshelves.jpg
+    image_path: /assets/images/bookshelves.jpg
+    alt: "Knihovnička"
+    title: "Už na vás čekají..."
+  - url: /assets/images/boardgames.jpg
+    image_path: /assets/images/boardgames.jpg
+    alt: "Deskovky"
+    title: "Deskovky"
+  - url: /assets/images/counter.jpg
+    image_path: /assets/images/counter.jpg
+    alt: "Za kasou"
+    title: "Za kasou"
+  - url: /assets/images/bookshelves-2.jpg
+    image_path: /assets/images/bookshelves-2.jpg
+    alt: "Knihovnička"
+    title: "A další..."            
 ---
 
-Tempor velit sint sunt ipsum tempor enim ad qui ullamco. Est dolore anim ad velit duis dolore minim sunt aliquip amet commodo labore. Ut eu pariatur aute ea aute excepteur laborum. Esse ea esse excepteur minim mollit qui cillum excepteur ex dolore magna. Labore deserunt fugiat incididunt incididunt sint ea. Consequat dolore aute laboris quis proident quis non et est consectetur ex eiusmod sit culpa.
+{: .text-center}
+Máme hodně knih pro děti, nějakou tu beletrii i trochu toho odborného, také deskové hry a audioknihy.  
+Pokud to půjde, objednáme na přání. [Napište nám](mailto:knihkupka@knihkupka.cz), o co máte zájem!.  
+Zabalíme dárkově.  
+Máte co číst?  
 
-Cupidatat ea do et in excepteur in. Ad nostrud ut est esse eu duis ea sunt eiusmod. Aliquip tempor veniam sint elit fugiat. Velit incididunt laboris amet incididunt labore dolore irure velit excepteur commodo deserunt laborum. Consectetur eu fugiat veniam veniam Lorem labore magna eiusmod. Ea occaecat reprehenderit pariatur consectetur minim labore ut aliquip.
+{% include gallery %}
