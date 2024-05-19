@@ -3,7 +3,27 @@ permalink: /kontakty/
 title: "Kontakty"
 ---
 
-Tempor velit sint sunt ipsum tempor enim ad qui ullamco. Est dolore anim ad velit duis dolore minim sunt aliquip amet commodo labore. Ut eu pariatur aute ea aute excepteur laborum. Esse ea esse excepteur minim mollit qui cillum excepteur ex dolore magna. Labore deserunt fugiat incididunt incididunt sint ea. Consequat dolore aute laboris quis proident quis non et est consectetur ex eiusmod sit culpa.
+# Otevírací doba
 
-Cupidatat ea do et in excepteur in. Ad nostrud ut est esse eu duis ea sunt eiusmod. Aliquip tempor veniam sint elit fugiat. Velit incididunt laboris amet incididunt labore dolore irure velit excepteur commodo deserunt laborum. Consectetur eu fugiat veniam veniam Lorem labore magna eiusmod. Ea occaecat reprehenderit pariatur consectetur minim labore ut aliquip.
+| Po - Pá | 9 - 11, 13 - 17 | 
+| So | 8 - 11 | 
+| Ne | Zavřeno |
 
+# Kde nás najdete
+
+<div>
+    <div style="float:left; width=30%">
+    Komenského nám. 105<br/>
+    Nové Strašecí
+    </div>
+    <div style="float:right; width=70%; padding: 20px;">
+    <iframe style="border:none" src="https://frame.mapy.cz/s/fosavuluzu" width="700" height="466" frameborder="0"></iframe>
+    </div>
+    <div style="clear:both"></div>
+</div>
+
+# Obchodní údaje
+
+Dita Albrechtová  
+IČO: 21282030  
+knihkupka@knihkupka.cz  
