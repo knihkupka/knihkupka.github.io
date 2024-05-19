@@ -5,7 +5,7 @@ title: "Kontakty"
 
 # Otevírací doba
 
-| Po - Pá | 9 - 11, 13 - 17 | 
+| Po - Pá | 9 - 11:30, 12:30 - 17 | 
 | So | 8 - 11 | 
 | Ne | Zavřeno |
 
@@ -24,6 +24,5 @@ title: "Kontakty"
 
 # Obchodní údaje
 
-Dita Albrechtová  
-IČO: 21282030  
-knihkupka@knihkupka.cz  
+Provozuje Dita Albrechtová, IČO: 21282030  
+Email: [knihkupka@knihkupka.cz](mailto:knihkupka@knihkupka.cz)
