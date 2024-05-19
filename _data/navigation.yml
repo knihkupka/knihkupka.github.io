@@ -1,6 +1,4 @@
 main:
-  - title: "Novinky"
-    url: /novinky/
   - title: "O nás"
     url: /about/
   - title: "Kontakty"

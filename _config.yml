@@ -13,8 +13,11 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Knihkupectví v Novém Strašecí
-email:
+title: Knihkupka
+subtitle: Knihkupectví v Novém Strašecí
+logo: /assets/images/logo.svg
+
+email: 
 description: Knihkupka, knihkupectví v Novém Strašecí.  
 # twitter_username: username
 # github_username: username
