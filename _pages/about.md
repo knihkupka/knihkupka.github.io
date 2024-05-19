@@ -19,6 +19,7 @@ gallery:
     alt: "Knihovnička"
     title: "A další..."            
 ---
+# O nás
 
 {: .text-center}
 Máme hodně knih pro děti, nějakou tu beletrii i trochu toho odborného, také deskové hry a audioknihy.  
