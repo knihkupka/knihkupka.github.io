@@ -5,7 +5,7 @@ title: "Kontakty"
 
 # Otevírací doba
 
-| Po - Pá | 9 - 11:30, 12:30 - 17 | 
+| Po - Pá | 9 - 11:30 12:30 - 17 | 
 | So | 8 - 11 | 
 | Ne | Zavřeno |
 
