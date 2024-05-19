@@ -14,7 +14,7 @@ title: "Kontakty"
 <div>
     <div style="float:left; width=30%">
     Komenského nám. 105<br/>
-    Nové Strašecí
+    271 01 Nové Strašecí
     </div>
     <div style="float:right; width=70%; padding: 20px;">
     <iframe style="border:none" src="https://frame.mapy.cz/s/fosavuluzu" width="700" height="466" frameborder="0"></iframe>
