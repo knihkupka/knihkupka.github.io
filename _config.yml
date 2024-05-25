@@ -1,17 +1,16 @@
 
-title: Knihkupka
-subtitle: Knihkupectví v Novém Strašecí
+title: knihkupka
+subtitle: knihkupectví v Novém Strašecí
 logo: /assets/images/logo.svg
 
-email: 
+email: knihkupka@knihkupa.cz
 description: Knihkupka, knihkupectví v Novém Strašecí.  
 minimal_mistakes_skin: default
 search: false
 locale: cs-CZ
 
+
 # Build settings
-plugins:
-  - jekyll-include-cache  
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
 # Outputting
@@ -22,6 +21,7 @@ timezone: Europe/Prague # https://en.wikipedia.org/wiki/List_of_tz_database_time
 
 include:
   - _pages
+  - _includes
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -44,8 +44,8 @@ plugins:
   - jemoji
   - jekyll-include-cache
 
-# author:
-#   name   : "Knihkupka"
+author:
+   name   : "Knihkupka, knihkupectví v Novém Strašecí"
 #   avatar : "/assets/images/bio-photo.jpg"
 #   bio    : "My awesome biography constrained to a sentence or two goes here."
   # links:

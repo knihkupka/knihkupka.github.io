@@ -19,12 +19,18 @@ search: false
 }
 
 .site-title {
-    font-family: 'Literata-Bold', serif;
+    font-family: 'Literata-Bold', serif;    
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-item-align: center;
     align-self: center;
+    vertical-align: top;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.5rem;    
 }
+
+.site-logo img {
+    padding-top: 0.1rem;
+    max-height: 2.7rem;
+  }
