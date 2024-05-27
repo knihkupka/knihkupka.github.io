@@ -18,7 +18,7 @@ gallery:
     image_path: /assets/images/bookshelves-2.jpg
     alt: "Knihovnička"
     title: "A další..."    
-  - url: /assets/images/poukázka.jpg
+  - url: /assets/images/poukazka.jpg
     alt: "Poukázky"
     title: "Poukázky"  
 ---
