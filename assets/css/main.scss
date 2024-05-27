@@ -20,14 +20,17 @@ search: false
 
 .site-title {
     font-family: 'Literata-Bold', serif;    
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-item-align: center;
-    align-self: center;
-    vertical-align: top;
+    vertical-align: bottom;
     font-weight: bold;
+    margin: 0.2rem 0 0 0.2rem;
     font-size: 1.5rem;    
+}
+
+.site-subtitle {
+    font-family: 'Literata-Bold', serif; 
+    margin: 0.2rem 0 0 0.2rem;
+    font-weight: bold;
+    font-size: 1rem;    
 }
 
 .site-logo img {
