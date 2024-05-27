@@ -19,6 +19,7 @@ gallery:
     alt: "Knihovnička"
     title: "A další..."    
   - url: /assets/images/poukazka.jpg
+    image_path: /assets/images/poukazka.jpg
     alt: "Poukázky"
     title: "Poukázky"  
 ---
