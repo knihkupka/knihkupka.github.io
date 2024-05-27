@@ -2,11 +2,61 @@
 # You don't need to edit this file, it's empty on purpose.
 # Edit theme's home layout instead if you wanna make some changes
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-layout: home
+layout: splash
 author_profile: false
-title: "Vítejte u Knihkupky"
+title: " "
 excerpt: "Malé knihkupectví v malém městě, ale něco se do něj vejde."
 header:
   overlay_image: /assets/images/background-home.jpg
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background 
 ---
+<h1>Novinky</h1>
+
+<div id="facebook-feed"></div>
+
+<script>
+  const access_token = "EAAFBdh8d7kABOZBOrxrttjNiqaJL9dutINovyTK6Kd5WbZA7unbzMnbhH2avzTN5W3Qy4ooCF3B6fInPCsGXhs5vafzT0PEvMVcilCCqFyOUxmOqZC9uXsWRyZCa0ZCGpfFx9KoM0sMDhEskvA3jCToO9LHvvT9E5F3PaOSLrFkZCYteOWeaSDRU2CF5ewmZBQZD";  
+  fetch(`https://graph.facebook.com/v20.0/114349938298748/posts?limit=6&fields=id,message,permalink_url,created_time&access_token=${access_token}`, {
+    method: "GET",
+    credentials: "same-origin"
+  }).then(response => response.json())
+    .then(response => {
+       var posts = response.data;
+       var feedHtml = '<div class="flex-container">';
+       var i=0;
+       posts.forEach(function(post) {
+         feedHtml += `
+           <div class="flex-element-news" style="padding:0.5em; display:flex; flex-direction:column; justify-content:space-between; ${i++ % 2 == 0 ? 'background-color: #f0f0f0;"' : ''}">
+            <div><em>${new Date(post.created_time).toLocaleDateString()}</em><p>${post.message}</p></div>  
+            <div id="${post.id}"></div>  
+            <div><a href="${post.permalink_url}">Zobrazit na Facebooku</a></div>
+           </div>`;
+
+          fetch(`https://graph.facebook.com/v20.0/${post.id}/attachments?access_token=${access_token}`, {
+            method: "GET",
+            credentials: "same-origin"
+         }).then(response => response.json())
+           .then(response => {
+              if (response.data.length > 0) {
+                var attachment = response.data[0];
+                var media = attachment.media;
+                if (media.image) {
+                  var image = media.image;
+                  var imageUrl = image.src;
+                  var imageElement = document.createElement("img");
+                  imageElement.style.alignSelf = "center";
+                  imageElement.style.width = "300px";
+                  imageElement.style.height = "300px";  
+                  imageElement.src = imageUrl;
+                  document.getElementById(post.id).appendChild(imageElement);
+                }
+              }
+           });
+       });
+       feedHtml += '</div>';
+       document.getElementById('facebook-feed').innerHTML = feedHtml;
+
+    }
+ );
+
+</script>
