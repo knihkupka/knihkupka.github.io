@@ -28,7 +28,7 @@ cs: &DEFAULT_CS
   comments_title             : "Komentáře"
   more_label                 : "Dozvědět se více"
   related_label              : "Mohlo by se vám také líbit"
-  follow_label               : "Sledovat:"
+  follow_label               : ""
   feed_label                 : "Feed"
   powered_by                 : "Používá"
   website_label              : "Webová stránka"

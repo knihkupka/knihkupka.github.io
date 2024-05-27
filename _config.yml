@@ -67,6 +67,9 @@ footer:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook"
       url: "https://www.facebook.com/knihkupka"
+    - label: "Napište nám"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:knihkupka@knihkupka.cz"
     # - label: "GitHub"
     #   icon: "fab fa-fw fa-github"
     #   url: "https://github.com/"
@@ -75,7 +78,7 @@ footer:
     #   url: "https://instagram.com/"
 
 atom_feed:
-  hide: false
+  hide: true
 
 defaults:
   # _posts
