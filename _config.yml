@@ -21,7 +21,6 @@ timezone: Europe/Prague # https://en.wikipedia.org/wiki/List_of_tz_database_time
 
 include:
   - _pages
- # - _includes
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
