@@ -3,11 +3,11 @@ permalink: /kontakty/
 title: "Kontakty"
 ---
 <div style="float:left; width=30%">
-    <h1 id="kontakty">Kontakty</h1>
-
-    <p>Dita Albrechtová<br />
+<div class="vcard">
+    <h1 id="kontakty">Kontakty</h1> 
+    Dita Albrechtová<br />
     IČO: 21282030<br />
-    Email: <a href="mailto:knihkupka@knihkupka.cz">knihkupka@knihkupka.cz</a></p>
+    Email: <a class="email" href="mailto:knihkupka@knihkupka.cz">knihkupka@knihkupka.cz</a>
 
     <h1 id="otevírací-doba">Otevírací doba</h1>
 
@@ -29,11 +29,11 @@ title: "Kontakty"
     </table>
 
     <h1 id="kde-nás-najdete">Kde nás najdete</h1>
-
-    <div>
-        Komenského nám. 105<br />
-        271 01 Nové Strašecí
+    <div class="adr">
+        <span class="street-address">Komenského nám. 105</span><br />
+        <span class="postal-code">271 01</span> <span class="locality">Nové Strašecí</span>
     </div>
+</div>
 </div>
 <div style="float:right; width=70%; padding: 20px;">
     <iframe style="border:none" src="https://frame.mapy.cz/s/fosavuluzu" width="700" height="466" frameborder="0"></iframe>
