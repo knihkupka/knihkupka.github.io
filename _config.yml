@@ -79,6 +79,12 @@ footer:
 atom_feed:
   hide: true
 
+analytics:
+  provider: google-gta
+  google:
+    tracking_id: G-N0HHQS2QKD
+    anonymize_ip: false  
+
 defaults:
   # _posts
   - scope:
@@ -105,3 +111,4 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+
