@@ -5,7 +5,7 @@
 layout: splash
 author_profile: false
 title: ""
-description: "Domovská stránka knihkupectví Knihkupka v Novém Strašecí"
+description: "Máme hodně knih pro děti, nějakou tu beletrii i trochu toho odborného, také deskové hry a audioknihy."
 excerpt: "Malé knihkupectví v malém městě, ale něco se do něj vejde."
 header:
   overlay_image: /assets/images/background-home.jpg
@@ -41,13 +41,12 @@ header:
               if (response.data.length > 0) {
                 var attachment = response.data[0];
                 var media = attachment.media;
-                if (media.image) {
+                if (media && media.image) {
                   var image = media.image;
                   var imageUrl = image.src;
                   var imageElement = document.createElement("img");
                   imageElement.style.alignSelf = "center";
-                  imageElement.style.width = "300px";
-                  imageElement.style.height = "300px";  
+                  imageElement.style.width = "300px";                  
                   imageElement.src = imageUrl;
                   imageElement.alt = "Příloha k příspěvku";
                   document.getElementById(post.id).appendChild(imageElement);
