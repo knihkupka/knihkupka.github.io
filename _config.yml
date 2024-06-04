@@ -2,6 +2,8 @@
 title: knihkupka
 subtitle: knihkupectví v Novém Strašecí
 logo: /assets/images/logo.svg
+url: "https://knihkupka.cz"
+baseurl: "/"
 
 email: knihkupka@knihkupka.cz
 description: Knihkupka, knihkupectví v Novém Strašecí.  
