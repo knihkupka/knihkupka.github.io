@@ -15,11 +15,11 @@ title: "Kontakty"
         <tbody>
             <tr>
             <td>Po - Pá</td>
-            <td>9 - 11:30 12:30 - 17</td>
+            <td>8:30 - 11:30 12:30 - 17</td>
             </tr>
             <tr>
             <td>So</td>
-            <td>8 - 11</td>
+            <td>9 - 11</td>
             </tr>
             <tr>
             <td>Ne</td>
