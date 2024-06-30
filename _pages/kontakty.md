@@ -7,7 +7,8 @@ title: "Kontakty"
     <h1 id="kontakty">Kontakty</h1> 
     Dita Albrechtová<br />
     IČO: 21282030<br />
-    Email: <a class="email" href="mailto:knihkupka@knihkupka.cz">knihkupka@knihkupka.cz</a>
+    Telefon: <a href="tel:+420607928760">607 928 760</a><br />
+    Email: <a href="mailto:knihkupka@knihkupka.cz">knihkupka@knihkupka.cz</a>
 
     <h1 id="otevírací-doba">Otevírací doba</h1>
 
