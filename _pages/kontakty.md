@@ -28,6 +28,7 @@ title: "Kontakty"
             </tr>
         </tbody>
     </table>
+    O sobotách 17.8, 24.8. a 31.8. bude zavřeno.</br>
 
     <h1 id="kde-nás-najdete">Kde nás najdete</h1>
     <div class="adr">
