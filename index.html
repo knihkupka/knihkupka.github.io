@@ -16,7 +16,7 @@ header:
 <div id="facebook-feed"></div>
 
 <script>
-  const access_token = "EAAFBdh8d7kABOzKNyVlvcxaizunE1aeEpXuAvUcZAA4LVXj1Fc910dI49T9HevnfWUyTZAI0PZAdZCZCEKskYYDGpDwNRvj9D2ifxJ7w3pEZAz5X3glD5GZAaGL3n3cOM1TUadT4bY0SUnIoBdCLU6NfhXXEHYdoI52bArZCokX0ZByGeiSyNvVHxEApBw5aCyIMZ";
+  const access_token = "EAAFBdh8d7kABOzKNyVlvcxaizunE1aeEpXuAvUcZAA4LVXj1Fc910dI49T9HevnfWUyTZAI0PZAdZCZCEKskYYDGpDwNRvj9D2ifxJ7w3pEZAz5X3glD5GZAaGL3n3cOM1TUadT4bY0SUnIoBdCLU6NfhXXEHYdoI52bArZCokX0ZByGeiSyNvVHxEApBw5aCyIMZD";
   fetch(`https://graph.facebook.com/v20.0/114349938298748/posts?limit=6&fields=id,message,permalink_url,created_time&access_token=${access_token}`, {
     method: "GET",
     credentials: "same-origin"
