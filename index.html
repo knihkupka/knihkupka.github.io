@@ -28,8 +28,8 @@ header:
        posts.forEach(function(post) {
          feedHtml += `
            <div class="flex-element-news" style="padding:0.5em; display:flex; flex-direction:column; justify-content:space-between; ${i++ % 2 == 0 ? 'background-color: #f0f0f0;"' : ''}">
-            <div><em>${new Date(post.created_time).toLocaleDateString()}</em><p>${post.message}</p></div>  
-            <div id="${post.id}"></div>  
+            <div><em>${new Date(post.created_time).toLocaleDateString()}</em><p>${post.message}</p>
+            <div id="${post.id}" style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; align-items: center;"></div></div>
             <div><a href="${post.permalink_url}">Zobrazit na Facebooku</a></div>
            </div>`;
 
