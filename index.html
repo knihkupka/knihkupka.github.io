@@ -25,7 +25,9 @@ header:
        var posts = response.data;
        var feedHtml = '<div class="flex-container">';
        var i=0;
-       posts.forEach(function(post) {
+       posts
+       .filter(post => post.message)
+       .forEach(function(post) {
          feedHtml += `
            <div class="flex-element-news" style="padding:0.5em; display:flex; flex-direction:column; justify-content:space-between; ${i++ % 2 == 0 ? 'background-color: #f0f0f0;"' : ''}">
             <div><em>${new Date(post.created_time).toLocaleDateString()}</em><p>${post.message}</p>
@@ -46,7 +48,7 @@ header:
                   var imageUrl = image.src;
                   var imageElement = document.createElement("img");
                   imageElement.style.alignSelf = "center";
-                  imageElement.style.width = "300px";                  
+                  imageElement.style.width = "300px";
                   imageElement.src = imageUrl;
                   imageElement.alt = "Příloha k příspěvku";
                   document.getElementById(post.id).appendChild(imageElement);
