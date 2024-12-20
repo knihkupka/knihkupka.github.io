@@ -16,8 +16,8 @@ header:
 <div id="facebook-feed"></div>
 
 <script>
-  const access_token = "EAAFBdh8d7kABOzKNyVlvcxaizunE1aeEpXuAvUcZAA4LVXj1Fc910dI49T9HevnfWUyTZAI0PZAdZCZCEKskYYDGpDwNRvj9D2ifxJ7w3pEZAz5X3glD5GZAaGL3n3cOM1TUadT4bY0SUnIoBdCLU6NfhXXEHYdoI52bArZCokX0ZByGeiSyNvVHxEApBw5aCyIMZD";
-  fetch(`https://graph.facebook.com/v20.0/114349938298748/posts?limit=12&fields=id,message,permalink_url,created_time&access_token=${access_token}`, {
+  const access_token = "EAAFBdh8d7kABO9JFSYHiZAoB50fzxnrBPREDbuFBy1tdHugoHSNZB50hpu0ZA435XFxHzZB8Fg6raSZAVk39zUU8MKjZBWh4lybbuegBKLkSlwYbMH9yMwFqZBxEkISWjf20xNapJ73iniPOcNWuqHvLknD8DVRGy4PlXGRKIC0ECURfyYZBDxPDFuPHMlrMv2EZD";
+  fetch(`https://graph.facebook.com/v20.0/114349938298748/posts?limit=100&fields=id,message,permalink_url,created_time,attachments&access_token=${access_token}`, {
     method: "GET",
     credentials: "same-origin"
   }).then(response => response.json())
@@ -26,12 +26,12 @@ header:
        var feedHtml = '<div class="flex-container">';
        var i=0;
        posts
-       .filter(post => post.message)
+       .filter(post => post.message || post.attachments)
        .slice(0, 6)
        .forEach(function(post) {
          feedHtml += `
            <div class="flex-element-news" style="padding:0.5em; display:flex; flex-direction:column; justify-content:space-between; ${i++ % 2 == 0 ? 'background-color: #f0f0f0;"' : ''}">
-            <div><em>${new Date(post.created_time).toLocaleDateString()}</em><p>${post.message}</p>
+            <div><em>${new Date(post.created_time).toLocaleDateString()}</em> ${post.message?'<p>' + post.message + '</p>' : ''}
             <div id="${post.id}" style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; align-items: center;"></div></div>
             <div><a href="${post.permalink_url}">Zobrazit na Facebooku</a></div>
            </div>`;
