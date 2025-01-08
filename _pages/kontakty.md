@@ -6,7 +6,7 @@ title: "Kontakty"
     <h1 id="kontakty">Kontakty</h1>
     Telefon: <a href="tel:+420607928760" class="tel">607 928 760</a><br />
     Email: <a href="mailto:knihkupka@knihkupka.cz" class="email">knihkupka@knihkupka.cz</a>    
-    <!--<h1 id="otevírací-doba">Otevírací doba</h1>
+    <h1 id="otevírací-doba">Otevírací doba</h1>
     <table>
         <tbody>
             <tr>
@@ -22,15 +22,7 @@ title: "Kontakty"
             <td>Zavřeno</td>
             </tr>
         </tbody>
-    </table>-->
-    <h1>Vánoční otevírací doba</h1>
-<pre style="font-family: sans-serif;"><b>20.12:</b> 8 - 11:30, 12:30 - 18
-<b>21.12:</b> 8 - 12
-<b>22.12:</b> 8 - 12
-<b>23.12:</b> 8 - 11:30, 12:30 - 18
-<b>24.12:</b> 8 - 12
-<b>25.12:</b> zavřeno
-<b>26.12:</b> zavřeno</pre>
+    </table>    
     <h1 id="kde-nás-najdete">Kde nás najdete</h1>
     <div class="adr">
         <span class="street-address">Komenského nám. 105</span><br />
