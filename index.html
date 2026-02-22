@@ -22,6 +22,15 @@ header:
     </iframe>
   </div>
 
-  <p class="facebook-embed-note">Pokud se náhled nezobrazuje, otevřete naši stránku přímo na <a href="https://www.facebook.com/knihkupka" target="_blank" rel="noopener">Facebooku</a>.</p>
+  <script>                                                  
+    var _fb = document.querySelector('.facebook-embed-wrapper iframe[data-src]');                                                                                                                                   
+    if (_fb) {                                              
+      var _w = Math.min(500, Math.max(180, document.documentElement.clientWidth));
+      _fb.src = _fb.dataset.src.replace(/width=\d+/, 'width=' + _w);
+      _fb.style.width = _w + 'px';
+    }
+  </script>
+
+
 </section>
 
