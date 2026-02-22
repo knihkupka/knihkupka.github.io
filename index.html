@@ -18,6 +18,7 @@ header:
       scrolling="no"
       frameborder="0"
       allowfullscreen="true"
+      width="100%"
       allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
     </iframe>
   </div>
@@ -25,20 +26,3 @@ header:
   <p class="facebook-embed-note">Pokud se náhled nezobrazuje, otevřete naši stránku přímo na <a href="https://www.facebook.com/knihkupka" target="_blank" rel="noopener">Facebooku</a>.</p>
 </section>
 
-<script>
-(function () {
-  function initFb() {
-    var wrapper = document.querySelector('.facebook-embed-wrapper');
-    var iframe = wrapper && wrapper.querySelector('iframe[data-src]');
-    if (!iframe) return;
-    var w = Math.min(500, Math.max(180, document.documentElement.clientWidth));
-    iframe.src = iframe.dataset.src.replace(/width=\d+/, 'width=' + w);
-    iframe.style.width = w + 'px';
-  }
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initFb);
-  } else {
-    initFb();
-  }
-}());
-</script>
