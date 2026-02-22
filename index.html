@@ -31,7 +31,7 @@ header:
     var wrapper = document.querySelector('.facebook-embed-wrapper');
     var iframe = wrapper && wrapper.querySelector('iframe[data-src]');
     if (!iframe) return;
-    var w = Math.min(500, Math.max(180, wrapper.clientWidth));
+    var w = Math.min(500, Math.max(180, document.documentElement.clientWidth));
     iframe.src = iframe.dataset.src.replace(/width=\d+/, 'width=' + w);
     iframe.style.width = w + 'px';
   }

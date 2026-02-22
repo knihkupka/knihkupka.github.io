@@ -115,6 +115,8 @@ body {
 // ============================================================
 .homepage-section--facebook {
   margin-top: 1rem;
+  width: 100vw;
+  margin-inline: calc(50% - 50vw);
 }
 
 .facebook-embed-wrapper {
