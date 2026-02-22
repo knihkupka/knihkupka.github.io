@@ -13,7 +13,7 @@ header:
   <div class="facebook-embed-wrapper">
     <iframe
       title="Facebook stránka Knihkupka"
-      src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fknihkupka&tabs=timeline&width=500&height=720&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId"
+      src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fknihkupka&tabs=timeline&width=500&height=720&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId"
       style="border:none;overflow:hidden"
       scrolling="no"
       frameborder="0"
@@ -24,3 +24,26 @@ header:
 
   <p class="facebook-embed-note">Pokud se náhled nezobrazuje, otevřete naši stránku přímo na <a href="https://www.facebook.com/knihkupka" target="_blank" rel="noopener">Facebooku</a>.</p>
 </section>
+
+<script>
+(function () {
+  function syncFbWidth() {
+    var wrapper = document.querySelector('.facebook-embed-wrapper');
+    var iframe = wrapper && wrapper.querySelector('iframe');
+    if (!iframe) return;
+    var w = Math.min(500, Math.max(180, wrapper.clientWidth));
+    var next = iframe.src.replace(/width=\d+/, 'width=' + w);
+    if (iframe.src !== next) iframe.src = next;
+  }
+  var timer;
+  window.addEventListener('resize', function () {
+    clearTimeout(timer);
+    timer = setTimeout(syncFbWidth, 200);
+  });
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', syncFbWidth);
+  } else {
+    syncFbWidth();
+  }
+}());
+</script>

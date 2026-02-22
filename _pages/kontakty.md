@@ -11,7 +11,7 @@ title: "Kontakty"
         <tbody>
             <tr>
             <td>Po - Pá</td>
-            <td>8:30 - 11:30 12:30 - 17</td>
+            <td>8:30 - 17</td>
             </tr>
             <tr>
             <td>So</td>
