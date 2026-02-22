@@ -5,9 +5,23 @@ search: false
 
 @charset "utf-8";
 
+// === Brand color overrides (must be before theme imports) ===
+$background-color:        #f7f1eb;
+$text-color:              #240F0A;
+$muted-text-color:        #7a5c52;
+$primary-color:           #240F0A;
+$border-color:            #e6ccaf;
+$footer-background-color: #240F0A;
+$link-color:              #240F0A;
+$link-color-hover:        #E3A856;
+$link-color-visited:      #240F0A;
+$masthead-link-color:     #240F0A;
+$masthead-link-color-hover: #E3A856;
+
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
 
+// === Local Literata Bold (for site title) ===
 @font-face {
   font-family: "Literata-Bold";
   src: url("../fonts/Literata-Bold.woff2") format("woff2"),
@@ -18,23 +32,45 @@ search: false
   font-style: normal;
 }
 
-h1 {
-  padding-top: 10pt;
+// === Global fonts ===
+body {
+  font-family: 'Barlow', system-ui, sans-serif;
+  font-weight: 300;
 }
 
+h1, h2, h3, h4, h5, h6,
+.page__title,
+.archive__item-title {
+  font-family: 'Literata', 'Literata-Bold', Georgia, serif;
+}
+
+// === Masthead ===
+.masthead {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e6ccaf;
+}
+
+.greedy-nav a {
+  font-family: 'Barlow', system-ui, sans-serif;
+  font-weight: 300;
+}
+
+// === Site title & subtitle ===
 .site-title {
-  font-family: "Literata-Bold", serif;
+  font-family: "Literata-Bold", 'Literata', serif;
   vertical-align: bottom;
   font-weight: bold;
   margin: 0.2rem 0 0 0.2rem;
   font-size: 1.5rem;
+  color: #240F0A;
 }
 
 .site-subtitle {
-  font-family: "Literata-Bold", serif;
+  font-family: 'Barlow', system-ui, sans-serif;
   margin: 0.2rem 0 0 0.2rem;
-  font-weight: bold;
+  font-weight: 300;
   font-size: 1rem;
+  color: #240F0A;
 }
 
 .site-logo img {
@@ -42,19 +78,21 @@ h1 {
   max-height: 2.7rem;
 }
 
+// === Facebook embed ===
 .homepage-section--facebook {
   margin-top: 1rem;
 }
 
 .facebook-embed-wrapper {
-  display: flex;
-  justify-content: center;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .facebook-embed-wrapper iframe {
-  width: min(100%, 500px);
+  width: 100%;
+  height: 75vh;
+  min-height: 400px;
 }
-
 
 .facebook-embed-note {
   margin-top: 0.75rem;
