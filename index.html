@@ -6,57 +6,25 @@ description: "Máme hodně knih pro děti, nějakou tu beletrii i trochu toho od
 excerpt: "Malé knihkupectví v malém městě, ale něco se do něj vejde."
 header:
   overlay_image: /assets/images/background-home.jpg
-  overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background 
+  overlay_filter: 0.5
 ---
 
-<h2>Novinky</h2>
-<div id="facebook-feed"></div>
+<section class="homepage-section homepage-section--facebook">
+  <h2>Novinky</h2>
 
-<script>
-  const access_token = "EAAFBdh8d7kABO9JFSYHiZAoB50fzxnrBPREDbuFBy1tdHugoHSNZB50hpu0ZA435XFxHzZB8Fg6raSZAVk39zUU8MKjZBWh4lybbuegBKLkSlwYbMH9yMwFqZBxEkISWjf20xNapJ73iniPOcNWuqHvLknD8DVRGy4PlXGRKIC0ECURfyYZBDxPDFuPHMlrMv2EZD";
-  fetch(`https://graph.facebook.com/v20.0/114349938298748/posts?limit=100&fields=id,message,permalink_url,created_time,attachments&access_token=${access_token}`, {
-    method: "GET",
-    credentials: "same-origin"
-  }).then(response => response.json())
-    .then(response => {
-       var posts = response.data;
-       var feedHtml = '<div class="flex-container">';
-       var i=0;
-       posts
-       .filter(post => post.message || post.attachments)
-       .slice(0, 6)
-       .forEach(function(post) {
-         feedHtml += `
-           <div class="flex-element-news" style="padding:0.5em; display:flex; flex-direction:column; justify-content:space-between; ${i++ % 2 == 0 ? 'background-color: #f0f0f0;"' : ''}">
-            <div><em>${new Date(post.created_time).toLocaleDateString()}</em> ${post.message?'<p>' + post.message + '</p>' : ''}
-            <div id="${post.id}" style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; align-items: center;"></div></div>
-            <div><a href="${post.permalink_url}">Zobrazit na Facebooku</a></div>
-           </div>`;
+  <div class="facebook-embed-wrapper">
+    <iframe
+      title="Facebook stránka Knihkupka"
+      src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fknihkupka&tabs=timeline&width=500&height=720&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId"
+      width="500"
+      height="720"
+      style="border:none;overflow:hidden"
+      scrolling="no"
+      frameborder="0"
+      allowfullscreen="true"
+      allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+    </iframe>
+  </div>
 
-          fetch(`https://graph.facebook.com/v20.0/${post.id}/attachments?access_token=${access_token}`, {
-            method: "GET",
-            credentials: "same-origin"
-         }).then(response => response.json())
-           .then(response => {
-              if (response.data.length > 0) {
-                var attachment = response.data[0];
-                var media = attachment.media;
-                if (media && media.image) {
-                  var image = media.image;
-                  var imageUrl = image.src;
-                  var imageElement = document.createElement("img");
-                  imageElement.style.alignSelf = "center";
-                  imageElement.style.width = "300px";
-                  imageElement.src = imageUrl;
-                  imageElement.alt = "Příloha k příspěvku";
-                  document.getElementById(post.id).appendChild(imageElement);
-                }
-              }
-           });
-       });
-       feedHtml += '</div>';
-       document.getElementById('facebook-feed').innerHTML = feedHtml;
-    }
- );
-
-</script>
+  <p class="facebook-embed-note">Pokud se náhled nezobrazuje, otevřete naši stránku přímo na <a href="https://www.facebook.com/knihkupka" target="_blank" rel="noopener">Facebooku</a>.</p>
+</section>
