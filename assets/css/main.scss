@@ -5,23 +5,23 @@ search: false
 
 @charset "utf-8";
 
-// === Brand color overrides (must be before theme imports) ===
-$background-color:        #f7f1eb;
-$text-color:              #240F0A;
-$muted-text-color:        #7a5c52;
-$primary-color:           #240F0A;
-$border-color:            #e6ccaf;
-$footer-background-color: #240F0A;
-$link-color:              #240F0A;
-$link-color-hover:        #E3A856;
-$link-color-visited:      #240F0A;
-$masthead-link-color:     #240F0A;
+// === Brand color overrides (must be before theme imports so !default values lose) ===
+$background-color:          #f7f1eb;
+$text-color:                #240F0A;
+$muted-text-color:          #7a5c52;
+$primary-color:             #240F0A;
+$border-color:              #e6ccaf;
+$footer-background-color:   #240F0A;
+$link-color:                #240F0A;
+$link-color-hover:          #E3A856;
+$link-color-visited:        #240F0A;
+$masthead-link-color:       #240F0A;
 $masthead-link-color-hover: #E3A856;
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
 
-// === Local Literata Bold (for site title) ===
+// === Local Literata Bold (kept as fallback for site title) ===
 @font-face {
   font-family: "Literata-Bold";
   src: url("../fonts/Literata-Bold.woff2") format("woff2"),
@@ -32,53 +32,87 @@ $masthead-link-color-hover: #E3A856;
   font-style: normal;
 }
 
-// === Global fonts ===
-body {
-  font-family: 'Barlow', system-ui, sans-serif;
-  font-weight: 300;
-}
-
+// ============================================================
+// FONTS
+// Secondary font (Barlow Light) for ALL text across the site
+// ============================================================
+body,
+p, li, dt, dd, blockquote, figcaption,
 h1, h2, h3, h4, h5, h6,
+a, button, input, textarea, select,
+table, th, td,
 .page__title,
-.archive__item-title {
-  font-family: 'Literata', 'Literata-Bold', Georgia, serif;
-}
-
-// === Masthead ===
-.masthead {
-  background-color: #ffffff;
-  border-bottom: 1px solid #e6ccaf;
-}
-
-.greedy-nav a {
+.page__lead,
+.page__meta,
+.page__content,
+.archive__item-title,
+.archive__item-excerpt,
+.nav__title,
+.nav__sub-title,
+.toc__menu,
+.greedy-nav a,
+.greedy-nav .visible-links a,
+.greedy-nav .hidden-links a,
+.site__footer,
+.page__footer,
+.page__footer-follow,
+.page__footer-copyright {
   font-family: 'Barlow', system-ui, sans-serif;
   font-weight: 300;
 }
 
-// === Site title & subtitle ===
+// Primary font (Literata) ONLY for site title and subtitle
 .site-title {
   font-family: "Literata-Bold", 'Literata', serif;
+  font-weight: 700;
   vertical-align: bottom;
-  font-weight: bold;
   margin: 0.2rem 0 0 0.2rem;
   font-size: 1.5rem;
   color: #240F0A;
 }
 
 .site-subtitle {
-  font-family: 'Barlow', system-ui, sans-serif;
+  font-family: 'Literata', "Literata-Bold", serif;
+  font-weight: 400;
   margin: 0.2rem 0 0 0.2rem;
-  font-weight: 300;
   font-size: 1rem;
   color: #240F0A;
 }
 
+// ============================================================
+// BACKGROUNDS — #f7f1eb everywhere, dark footer
+// ============================================================
+html,
+body {
+  background-color: #f7f1eb;
+}
+
+.masthead {
+  background-color: #f7f1eb;
+  border-bottom: 1px solid #e6ccaf;
+}
+
+// Greedy nav dropdown (hidden links on mobile)
+.greedy-nav .hidden-links {
+  background: #f7f1eb;
+  border: 1px solid #e6ccaf;
+}
+
+.greedy-nav__toggle {
+  color: #240F0A;
+}
+
+// ============================================================
+// LOGO
+// ============================================================
 .site-logo img {
   padding-top: 0.1rem;
   max-height: 2.7rem;
 }
 
-// === Facebook embed ===
+// ============================================================
+// FACEBOOK EMBED
+// ============================================================
 .homepage-section--facebook {
   margin-top: 1rem;
 }
