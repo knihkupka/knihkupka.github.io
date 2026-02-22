@@ -5,55 +5,59 @@ search: false
 
 @charset "utf-8";
 
-@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
-@import "minimal-mistakes"; // main partials
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
 
 @font-face {
-    font-family: 'Literata-Bold';
-    src: url('../fonts/Literata-Bold.woff2') format('woff2'),
-            url('../fonts/Literata-Bold.woff') format('woff'),
-            url('../fonts/Literata-Bold.ttf') format('truetype');
-    font-weight: 700;
-    font-display: swap;
-    font-style: normal;
+  font-family: "Literata-Bold";
+  src: url("../fonts/Literata-Bold.woff2") format("woff2"),
+       url("../fonts/Literata-Bold.woff") format("woff"),
+       url("../fonts/Literata-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
 }
 
 h1 {
-  padding-top: 10pt; /* Adjust the value as needed */
+  padding-top: 10pt;
 }
 
 .site-title {
-    font-family: 'Literata-Bold', serif;    
-    vertical-align: bottom;
-    font-weight: bold;
-    margin: 0.2rem 0 0 0.2rem;
-    font-size: 1.5rem;    
+  font-family: "Literata-Bold", serif;
+  vertical-align: bottom;
+  font-weight: bold;
+  margin: 0.2rem 0 0 0.2rem;
+  font-size: 1.5rem;
 }
 
 .site-subtitle {
-    font-family: 'Literata-Bold', serif; 
-    margin: 0.2rem 0 0 0.2rem;
-    font-weight: bold;
-    font-size: 1rem;    
+  font-family: "Literata-Bold", serif;
+  margin: 0.2rem 0 0 0.2rem;
+  font-weight: bold;
+  font-size: 1rem;
 }
 
 .site-logo img {
-    padding-top: 0.1rem;
-    max-height: 2.7rem;
-  }
+  padding-top: 0.1rem;
+  max-height: 2.7rem;
+}
 
-  .flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
+.homepage-section--facebook {
+  margin-top: 1rem;
+}
 
-  .flex-element-news {
-    flex: 30%
-  }
+.facebook-embed-wrapper {
+  display: flex;
+  justify-content: center;
+}
 
-  @media (max-width: 660px) {
-    .flex-element-news {
-        flex: 100%
-    }
-  }
+.facebook-embed-wrapper iframe {
+  width: min(100%, 500px);
+}
+
+
+.facebook-embed-note {
+  margin-top: 0.75rem;
+  text-align: center;
+  font-size: 0.95rem;
+}

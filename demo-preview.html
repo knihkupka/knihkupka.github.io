@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Knihkupka – demo náhledu</title>
+  <style>
+    body { font-family: Georgia, serif; margin: 0; background: #fafafa; color: #222; }
+    header { padding: 18px 24px; border-bottom: 1px solid #ddd; background: #fff; }
+    .brand { font-size: 1.6rem; font-weight: 700; }
+    .subtitle { color: #666; margin-top: 4px; }
+    main { max-width: 980px; margin: 24px auto; padding: 0 16px; }
+    h2 { margin-bottom: 14px; }
+    .facebook-embed-wrapper { display: flex; justify-content: center; }
+    iframe { width: min(100%, 500px); border: none; overflow: hidden; min-height: 720px; background: #fff; }
+    .note { margin-top: 16px; color: #666; font-size: .92rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">knihkupka</div>
+    <div class="subtitle">knihkupectví v Novém Strašecí</div>
+  </header>
+  <main>
+    <h2>Novinky</h2>
+    <div class="facebook-embed-wrapper">
+      <iframe
+        title="Facebook stránka Knihkupka"
+        src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fknihkupka&tabs=timeline&width=500&height=720&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId"
+        width="500"
+        height="720"
+        scrolling="no"
+        frameborder="0"
+        allowfullscreen="true"
+        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+      </iframe>
+    </div>
+    <p class="note">Pokud se náhled nezobrazuje, otevřete naši stránku přímo na <a href="https://www.facebook.com/knihkupka" target="_blank" rel="noopener">Facebooku</a>.</p>
+    <p class="note">Demo-only preview stránka pro vizuální ověření Facebook iframe sekce bez Jekyll buildu.</p>
+  </main>
+</body>
+</html>
