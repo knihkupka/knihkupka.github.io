@@ -59,7 +59,7 @@
 
     .logo-float {
       float: left;
-      width: min(42vw, 460px);
+      width: min(31vw, 340px);
       margin: 1.8rem 4ch 2.2rem 0;
       padding: .4rem;
       background: var(--bg);
@@ -102,7 +102,23 @@
     }
 
     .contact-list a { color: #f7f1eb; text-decoration: none; border-bottom: 1px solid transparent; }
-    .intro-flow { margin-top: .1rem; margin-left: min(42vw, 460px); }
+    .intro-flow { margin-top: .1rem; margin-left: min(31vw, 340px); }
+
+    .address-inline {
+      text-align: right;
+      padding-bottom: .2rem;
+    }
+
+    .address-inline a {
+      color: var(--text);
+      text-decoration: none;
+      border-bottom: 1px solid var(--line);
+      font-weight: 600;
+    }
+
+    .address-inline .icon {
+      color: var(--text);
+    }
     .contact-list a:hover { border-color: var(--accent); }
     .icon {
       display: inline-flex;
@@ -126,8 +142,11 @@
 
     .slogan-banner {
       clear: both;
-      margin: .6rem 0 1.6rem;
-      padding: 3rem 1rem;
+      margin: .8rem 0 1.4rem;
+      padding: 1.05rem 1rem;
+      width: 100vw;
+      margin-left: calc(50% - 50vw);
+      margin-right: calc(50% - 50vw);
       background-image: linear-gradient(rgba(36,15,10,.42), rgba(36,15,10,.42)), url('assets/images/background-home.jpg');
       background-size: cover;
       background-position: center;
@@ -138,9 +157,9 @@
     .slogan-banner p {
       margin: 0;
       color: #fff;
-      font-family: "Literata", Georgia, "Times New Roman", serif;
-      font-size: clamp(1.5rem, 3.1vw, 2.4rem);
-      line-height: 1.2;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: clamp(1rem, 2.05vw, 1.85rem);
+      line-height: 1.25;
     }
 
 
@@ -197,6 +216,7 @@
       .logo-float { float: none; width: min(100%, 520px); margin: 1.2rem 0 1.6rem; }
       .logo-tagline { white-space: normal; }
       .intro-flow { margin-left: 0; }
+      .address-inline { text-align: left; }
       .fb-float { float: none; width: 100%; min-width: 0; margin-left: 0; }
       .address-map { grid-template-columns: 1fr; }
       .gallery { grid-template-columns: 1fr; }
@@ -211,7 +231,6 @@
         <li><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1-.24c1.12.37 2.33.56 3.59.56a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.3 21 3 13.7 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.26.19 2.47.56 3.59a1 1 0 0 1-.24 1z"/></svg></span><a href="tel:+420607928760">607 928 760</a></li>
         <li><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20.52 3.48A11.86 11.86 0 0 0 12.07 0C5.5 0 .16 5.34.16 11.91c0 2.1.55 4.15 1.6 5.96L0 24l6.3-1.65a11.88 11.88 0 0 0 5.77 1.47h.01c6.57 0 11.91-5.34 11.91-11.91 0-3.18-1.24-6.17-3.47-8.43zM12.08 21.8h-.01a9.9 9.9 0 0 1-5.03-1.37l-.36-.21-3.74.98 1-3.64-.23-.37a9.9 9.9 0 0 1-1.53-5.28c0-5.47 4.45-9.92 9.92-9.92 2.65 0 5.13 1.03 7 2.9a9.86 9.86 0 0 1 2.9 7c0 5.47-4.45 9.91-9.92 9.91zm5.44-7.42c-.3-.15-1.77-.87-2.05-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.16-.17.2-.35.22-.65.08-.3-.15-1.28-.47-2.43-1.5-.9-.8-1.5-1.8-1.68-2.1-.17-.3-.02-.46.13-.6.14-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.48-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.05 1.03-1.05 2.5s1.08 2.9 1.23 3.1c.15.2 2.12 3.24 5.14 4.54.72.31 1.28.5 1.72.64.72.23 1.38.2 1.9.12.58-.09 1.77-.72 2.02-1.42.25-.7.25-1.29.17-1.42-.07-.12-.27-.2-.57-.35z"/></svg></span><a href="https://wa.me/420607928760">WhatsApp</a></li>
         <li><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.88 3.77-3.88 1.09 0 2.24.19 2.24.19v2.46H15.2c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12"/></svg></span><a href="https://www.facebook.com/knihkupka">Facebook /knihkupka</a></li>
-        <li><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2 3 8v12h18V8zm0 2.2L19 9v9H5V9zM8 11h8v2H8zm0 3h8v2H8z"/></svg></span><a href="#kde-nas-najdete">Komenského nám. 105, 271 01 Nové Strašecí</a></li>
         </ul>
       </section>
     </div>
@@ -222,6 +241,12 @@
       <img src="assets/images/logo.svg" alt="Knihkupka logo">
       <p class="logo-tagline">Knihkupectví v Novém Strašecí</p>
     </div>
+
+    <section class="address-inline intro-flow" aria-label="Adresa">
+      <p>
+        <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3.2 3.5 9.5V21h17V9.5L12 3.2zm0 2.4 6.3 4.6v8.9H5.7v-8.9L12 5.6zm-2.6 6h5.2v5.1H9.4z"/></svg></span><a href="https://frame.mapy.cz/s/fosavuluzu">Komenského nám. 105, 271 01 Nové Strašecí</a>
+      </p>
+    </section>
 
     <section class="hours intro-flow" aria-labelledby="oteviraci-doba">
       <h2 id="oteviraci-doba">Otevírací doba</h2>
@@ -235,7 +260,7 @@
     </section>
 
     <section class="slogan-banner" aria-label="Slogan knihkupectví">
-      <p>Malé knihkupectví v malém městě, ale něco se do něj vejde.</p>
+      <p>Malé knihkupectví v malém městě, ale něco se do něj vejde. Máte co číst?</p>
     </section>
 
     <section class="below-logo" aria-labelledby="onas-a-fotky">
