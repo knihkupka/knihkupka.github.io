@@ -138,6 +138,10 @@
 
     .below-logo {
       clear: both;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+      align-items: start;
     }
 
     .slogan-banner {
@@ -169,26 +173,42 @@
     .hours td { border-bottom: 1px solid var(--line); padding: .4rem .1rem; text-align: right; }
 
     .fb-float {
-      float: right;
-      width: 40%;
-      min-width: 290px;
-      margin: 0 0 .9rem 1rem;
+      width: 100%;
+      min-width: 0;
+      margin: 0;
       padding: .1rem;
+      grid-column: 2;
     }
 
-    .fb-float iframe { width: 100%; height: 620px; border: none; }
+    .fb-float iframe { width: 100%; height: 780px; border: none; }
+
+    .content-column {
+      grid-column: 1;
+      min-width: 0;
+    }
 
     .gallery {
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: .7rem;
+      grid-template-columns: 1fr;
+      gap: .65rem;
       margin-top: .8rem;
+      max-width: 100%;
     }
 
     .gallery img {
       width: 100%;
-      height: 210px;
+      max-width: 280px;
+      height: 158px;
       object-fit: cover;
+      border-radius: 4px;
+      scroll-snap-align: start;
+    }
+
+    .photo-reel {
+      max-height: 520px;
+      overflow-y: auto;
+      scroll-snap-type: y proximity;
+      padding-right: .25rem;
     }
 
     .address-map {
@@ -218,9 +238,12 @@
       .logo-tagline { white-space: normal; }
       .intro-flow { margin-left: 0; }
       .address-inline { text-align: left; }
-      .fb-float { float: none; width: 100%; min-width: 0; margin-left: 0; }
+      .below-logo { grid-template-columns: 1fr; }
+      .content-column, .fb-float { grid-column: auto; }
+      .fb-float iframe { height: 620px; }
+      .photo-reel { max-height: none; overflow: visible; }
+      .gallery img { max-width: 100%; height: 170px; }
       .address-map { grid-template-columns: 1fr; }
-      .gallery { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -266,6 +289,23 @@
     </section>
 
     <section class="below-logo" aria-labelledby="onas-a-fotky">
+      <div class="content-column">
+        <h2 id="onas-a-fotky">O nás</h2>
+        <p>Máme hodně knih pro děti, nějakou tu beletrii i trochu toho odborného, také deskové hry a audioknihy.</p>
+        <p>Pokud to půjde, objednáme na přání. <a href="mailto:knihkupka@knihkupka.cz">Napište nám</a>, o co máte zájem.</p>
+        <p>Zabalíme dárkově. Máte co číst?</p>
+
+        <div class="photo-reel" aria-label="Fotogalerie prodejny — svislý reel">
+          <div class="gallery" aria-label="Fotogalerie prodejny">
+            <img src="assets/images/bookshelves.jpg" alt="Knihovnička">
+            <img src="assets/images/boardgames.jpg" alt="Deskovky">
+            <img src="assets/images/counter.jpg" alt="Za kasou">
+            <img src="assets/images/bookshelves-2.jpg" alt="Další knihovnička">
+            <img src="assets/images/poukazka.jpg" alt="Dárkové poukázky">
+          </div>
+        </div>
+      </div>
+
       <aside class="fb-float">
         <iframe
           title="Facebook stránka Knihkupka"
@@ -274,19 +314,6 @@
           allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
         </iframe>
       </aside>
-
-      <h2 id="onas-a-fotky">O nás</h2>
-      <p>Máme hodně knih pro děti, nějakou tu beletrii i trochu toho odborného, také deskové hry a audioknihy.</p>
-      <p>Pokud to půjde, objednáme na přání. <a href="mailto:knihkupka@knihkupka.cz">Napište nám</a>, o co máte zájem.</p>
-      <p>Zabalíme dárkově. Máte co číst?</p>
-
-      <div class="gallery" aria-label="Fotogalerie prodejny">
-        <img src="assets/images/bookshelves.jpg" alt="Knihovnička">
-        <img src="assets/images/boardgames.jpg" alt="Deskovky">
-        <img src="assets/images/counter.jpg" alt="Za kasou">
-        <img src="assets/images/bookshelves-2.jpg" alt="Další knihovnička">
-        <img src="assets/images/poukazka.jpg" alt="Dárkové poukázky">
-      </div>
     </section>
 
     <section class="address-map" aria-labelledby="kde-nas-najdete">
