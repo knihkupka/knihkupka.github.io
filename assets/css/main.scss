@@ -107,7 +107,7 @@ body {
 // ============================================================
 .site-logo img {
   padding-top: 0.1rem;
-  max-height: 2.7rem;
+  max-height: 10.8rem;
 }
 
 // ============================================================
@@ -134,4 +134,76 @@ body {
   margin-top: 0.75rem;
   text-align: center;
   font-size: 0.95rem;
+}
+
+// ============================================================
+// HIDDEN REDESIGN VARIANTS
+// ============================================================
+.redesign {
+  margin-top: 1.5rem;
+}
+
+.redesign__grid {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.redesign__grid--intro,
+.redesign__grid--hours,
+.redesign__grid--contact-map {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.redesign__card {
+  background: rgba(255, 255, 255, 0.55);
+  border: 1px solid #e6ccaf;
+  border-radius: 0.6rem;
+  padding: 1rem 1.2rem;
+}
+
+.redesign__list {
+  margin: 0.3rem 0 1rem;
+}
+
+.redesign__list li {
+  margin-bottom: 0.35rem;
+}
+
+.redesign__timeline {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin-bottom: 1rem;
+}
+
+.redesign__card--hero {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.redesign__actions {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.redesign__card--map iframe {
+  width: 100%;
+  min-height: 320px;
+}
+
+.redesign__grid--quickinfo {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.redesign__card--feed h3 {
+  margin-top: 0;
+}
+
+.redesign--c .redesign__card--feed .facebook-embed-wrapper iframe {
+  width: 100%;
+  max-width: 500px;
 }
